@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #33803f, #485b4f);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 500px;
+  height: 700px;
+  background: linear-gradient(to bottom right, #ffffff9a, #ffffff36);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000002a;
+  overflow: hidden;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container form {
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px 5px 10px 10px;
+  background: #ffffff87;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container form:hover {
+  box-shadow: 0 0 10px #00000044;
+}
+
+.container form input {
+  font-size: 1srem;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+}
+
+.container form input:focus {
+  outline: none;
+}
+
+#product-list {
+  overflow-y: scroll;
+}
+
+/* Custom Scroll */
+#product-list::-webkit-scrollbar-thumb {
+  background-color: #51474739;
+  border-radius: 10px;
+}
+#product-list::-webkit-scrollbar-thumb:hover {
+  background-color: #2d2828;
+}
+#product-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+#product-list::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.product {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px;
+  background: linear-gradient(to bottom right, #ffffff9a, #ffffff36);
+  border-radius: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.product img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.product .details {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px 5px 5px 10px;
+}
+
+.product .productName {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.product .productPrice {
+  font-size: 0.95rem;
+}
